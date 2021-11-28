@@ -19,11 +19,11 @@ to change gamemode to adventure
 
 ## Permissions
 
-- **gamemodealias.command.***
+- **gamemodealias.command.***  
 can use all commands.
 
-- **gamemodealias.command.gm**
+- **gamemodealias.command.gm**  
 can use /gm command.
 
-- **gamemodealias.command.0~3**
+- **gamemodealias.command.0~3**  
 can use number commands.
