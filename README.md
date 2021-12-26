@@ -8,13 +8,13 @@ to change gamemode
 - /s, /0  
 survival
 
-- /c, /1
+- /c, /1  
 creative
 
-- /a, /2
+- /a, /2  
 adventure
 
-- /p, /3
+- /p, /3  
 spectator
 
 ## Permissions
