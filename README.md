@@ -2,28 +2,28 @@
 
 ## Commands
 
-- **/gm \<gamemode number>**  
+- /gm \<number>  
 to change gamemode
 
-- **/s, /0**
-to change gamemode to survival
+- /s, /0  
+survival
 
-- **/c, /1**
-to change gamemode to creative
+- /c, /1
+creative
 
-- **/a, /2**
-to change gamemode to adventure
+- /a, /2
+adventure
 
-- **/p, /3**
-to change gamemode to adventure
+- /p, /3
+spectator
 
 ## Permissions
 
-- **gamemodealias.command.***  
-can use all commands.
+- gamemodealias.command.  
+all commands
 
-- **gamemodealias.command.gm**  
-can use /gm command.
+- gamemodealias.command.gm  
+/gm command
 
-- **gamemodealias.command.0~3**  
-can use number commands.
+- gamemodealias.command.0~3  
+number commands
