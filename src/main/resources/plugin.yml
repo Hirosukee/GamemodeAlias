@@ -1,40 +1,6 @@
 name: GamemodeAlias
-version: '1.0'
-main: art.hirosuke.gamemodealias.GamemodeAlias
+version: '1.0.0'
+main: love.chihuyu.GamemodeAlias
 authors: [ Hirosuke ]
-description: Add Gamemode Aliases.
 commands:
-  gm:
-    aliases:
-      - game
-  s:
-    aliases:
-      - 0
-  c:
-    aliases:
-      - 1
-  a:
-    aliases:
-      - 2
-  p:
-    aliases:
-      - 3
 permissions:
-  gamemodealias.commands.*:
-    default: op
-    children:
-      gamemodealias.commands.gm: true
-      gamemodealias.commands.s: true
-      gamemodealias.commands.c: true
-      gamemodealias.commands.a: true
-      gamemodealias.commands.p: true
-  gamemodealias.commands.gm:
-    default: op
-  gamemodealias.commands.s:
-    default: op
-  gamemodealias.commands.c:
-    default: op
-  gamemodealias.commands.a:
-    default: op
-  gamemodealias.commands.p:
-    default: op
