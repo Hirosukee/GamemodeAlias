@@ -14,19 +14,23 @@ object CommandAdventure {
         .withPermission("gamemodealias.adventure")
         .withPermission(CommandPermission.OP)
         .withAliases("a")
-        .executesPlayer(PlayerCommandExecutor { sender, args ->
-            sender.gameMode = GameMode.ADVENTURE
-            sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${sender.gameMode.name}${ChatColor.RESET}.")
-        })
+        .executesPlayer(
+            PlayerCommandExecutor { sender, args ->
+                sender.gameMode = GameMode.ADVENTURE
+                sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${sender.gameMode.name}${ChatColor.RESET}.")
+            }
+        )
 
     val withTarget = CommandAPICommand("2")
         .withPermission("gamemodealias.adventure")
         .withPermission(CommandPermission.OP)
         .withAliases("a")
         .withArguments(PlayerArgument("player"))
-        .executesPlayer(PlayerCommandExecutor { sender, args ->
-            val player = args[0] as Player
-            player.gameMode = GameMode.ADVENTURE
-            sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${player.gameMode.name}${ChatColor.RESET}.")
-        })
+        .executesPlayer(
+            PlayerCommandExecutor { sender, args ->
+                val player = args[0] as Player
+                player.gameMode = GameMode.ADVENTURE
+                sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${player.gameMode.name}${ChatColor.RESET}.")
+            }
+        )
 }

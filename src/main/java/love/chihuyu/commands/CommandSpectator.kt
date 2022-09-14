@@ -14,19 +14,23 @@ object CommandSpectator {
         .withPermission("gamemodealias.spectator")
         .withPermission(CommandPermission.OP)
         .withAliases("p")
-        .executesPlayer(PlayerCommandExecutor { sender, args ->
-            sender.gameMode = GameMode.SPECTATOR
-            sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${sender.gameMode.name}${ChatColor.RESET}.")
-        })
+        .executesPlayer(
+            PlayerCommandExecutor { sender, args ->
+                sender.gameMode = GameMode.SPECTATOR
+                sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${sender.gameMode.name}${ChatColor.RESET}.")
+            }
+        )
 
     val withTarget = CommandAPICommand("3")
         .withPermission("gamemodealias.spectator")
         .withPermission(CommandPermission.OP)
         .withAliases("p")
         .withArguments(PlayerArgument("player"))
-        .executesPlayer(PlayerCommandExecutor { sender, args ->
-            val player = args[0] as Player
-            player.gameMode = GameMode.SPECTATOR
-            sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${player.gameMode.name}${ChatColor.RESET}.")
-        })
+        .executesPlayer(
+            PlayerCommandExecutor { sender, args ->
+                val player = args[0] as Player
+                player.gameMode = GameMode.SPECTATOR
+                sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${player.gameMode.name}${ChatColor.RESET}.")
+            }
+        )
 }

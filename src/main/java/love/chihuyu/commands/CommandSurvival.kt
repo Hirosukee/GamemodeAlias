@@ -14,19 +14,23 @@ object CommandSurvival {
         .withPermission("gamemodealias.survival")
         .withPermission(CommandPermission.OP)
         .withAliases("s")
-        .executesPlayer(PlayerCommandExecutor { sender, args ->
-            sender.gameMode = GameMode.SURVIVAL
-            sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${sender.gameMode.name}${ChatColor.RESET}.")
-        })
+        .executesPlayer(
+            PlayerCommandExecutor { sender, args ->
+                sender.gameMode = GameMode.SURVIVAL
+                sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${sender.gameMode.name}${ChatColor.RESET}.")
+            }
+        )
 
     val withTarget = CommandAPICommand("0")
         .withPermission("gamemodealias.survival")
         .withPermission(CommandPermission.OP)
         .withAliases("s")
         .withArguments(PlayerArgument("player"))
-        .executesPlayer(PlayerCommandExecutor { sender, args ->
-            val player = args[0] as Player
-            player.gameMode = GameMode.SURVIVAL
-            sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${player.gameMode.name}${ChatColor.RESET}.")
-        })
+        .executesPlayer(
+            PlayerCommandExecutor { sender, args ->
+                val player = args[0] as Player
+                player.gameMode = GameMode.SURVIVAL
+                sender.sendMessage("Gamemode set to ${ChatColor.UNDERLINE}${player.gameMode.name}${ChatColor.RESET}.")
+            }
+        )
 }
