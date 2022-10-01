@@ -12,7 +12,6 @@ object CommandAdventure {
 
     val main = CommandAPICommand("2")
         .withPermission("gamemodealias.adventure")
-        .withPermission(CommandPermission.OP)
         .withAliases("a")
         .executesPlayer(
             PlayerCommandExecutor { sender, args ->
@@ -22,8 +21,7 @@ object CommandAdventure {
         )
 
     val withTarget = CommandAPICommand("2")
-        .withPermission("gamemodealias.adventure")
-        .withPermission(CommandPermission.OP)
+        .withPermission("gamemodealias.adventure.others")
         .withAliases("a")
         .withArguments(PlayerArgument("player"))
         .executesPlayer(

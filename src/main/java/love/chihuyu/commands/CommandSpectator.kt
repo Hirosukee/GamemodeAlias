@@ -12,7 +12,6 @@ object CommandSpectator {
 
     val main = CommandAPICommand("3")
         .withPermission("gamemodealias.spectator")
-        .withPermission(CommandPermission.OP)
         .withAliases("p")
         .executesPlayer(
             PlayerCommandExecutor { sender, args ->
@@ -22,8 +21,7 @@ object CommandSpectator {
         )
 
     val withTarget = CommandAPICommand("3")
-        .withPermission("gamemodealias.spectator")
-        .withPermission(CommandPermission.OP)
+        .withPermission("gamemodealias.spectator.others")
         .withAliases("p")
         .withArguments(PlayerArgument("player"))
         .executesPlayer(

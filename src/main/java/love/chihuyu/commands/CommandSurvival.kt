@@ -12,7 +12,6 @@ object CommandSurvival {
 
     val main = CommandAPICommand("0")
         .withPermission("gamemodealias.survival")
-        .withPermission(CommandPermission.OP)
         .withAliases("s")
         .executesPlayer(
             PlayerCommandExecutor { sender, args ->
@@ -22,8 +21,7 @@ object CommandSurvival {
         )
 
     val withTarget = CommandAPICommand("0")
-        .withPermission("gamemodealias.survival")
-        .withPermission(CommandPermission.OP)
+        .withPermission("gamemodealias.survival.others")
         .withAliases("s")
         .withArguments(PlayerArgument("player"))
         .executesPlayer(
