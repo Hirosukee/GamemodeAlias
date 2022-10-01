@@ -23,11 +23,23 @@ set gamemode to spectator.
 * `gamemodealias.survival`
 use `/0` command.
 
+* `gamemodealias.survival.others`
+use `/0` command to other.
+
 * `gamemodealias.creative`
 use `/1` command.
+
+* `gamemodealias.creative.others`
+use `/1` command to others.
 
 * `gamemodealias.adventure`
 use `/2` command.
 
+* `gamemodealias.adventure.others`
+use `/2` command to others.
+
 * `gamemodealias.spectator`
 use `/3` command.
+
+* `gamemodealias.spectator.others`
+use `/3` command to others.
