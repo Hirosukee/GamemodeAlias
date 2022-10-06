@@ -6,16 +6,16 @@ Add gamemode command's aliases.
 
 ## Commands
 
-* `/0[s]`  
+* `/0[s, survival]`  
 set gamemode to survival.
 
-* `/1[c]`  
+* `/1[c, creative]`  
 set gamemode to creative.
 
-* `/2[a]`  
+* `/2[a, adventure]`  
 set gamemode to adventure.
 
-* `/3[p]`  
+* `/3[p, spectator]`  
 set gamemode to spectator.
 
 ## Permissions
