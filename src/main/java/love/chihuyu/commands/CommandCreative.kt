@@ -12,7 +12,7 @@ object CommandCreative {
 
     val main = CommandAPICommand("1")
         .withPermission("gamemodealias.creative")
-        .withAliases("c")
+        .withAliases("c", "creative")
         .executesPlayer(
             PlayerCommandExecutor { sender, args ->
                 sender.gameMode = GameMode.CREATIVE
@@ -22,7 +22,7 @@ object CommandCreative {
 
     val withTarget = CommandAPICommand("1")
         .withPermission("gamemodealias.creative.others")
-        .withAliases("c")
+        .withAliases("c", "creative")
         .withArguments(PlayerArgument("player"))
         .executesPlayer(
             PlayerCommandExecutor { sender, args ->
